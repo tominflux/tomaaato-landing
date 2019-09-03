@@ -1,0 +1,35 @@
+{
+  "name": "landing",
+  "version": "1.0.0",
+  "description": "landing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MakingUtopia/landing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MakingUtopia/landing/issues"
+  },
+  "homepage": "https://github.com/MakingUtopia/landing#readme",
+  "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@primer/octicons-react": "^9.1.1",
+    "babel-core": "^6.26.3",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^10.0.0",
+    "browserify": "^16.5.0",
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "reactify": "^1.1.1",
+    "uglifyify": "^5.0.2"
+  }
+}
