@@ -1,0 +1,36 @@
+body {
+    font-family: Andale Mono, monospace;
+    background-color: #060516;
+    color: #fff;
+}
+
+section {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.landing {
+    text-align: center;
+}
+
+.landing .canvas-container {
+    display: inline-block;
+    position: relative;
+    margin-top: 0vh;
+}
+
+@media (orientation: landscape) {
+    .landing .canvas-container {
+        width: 100vh;
+        height: 100vh;
+    }
+}
+
+@media (orientation: portrait) {
+    .landing .canvas-container {
+        width: 100vw;
+        height: 100vw;
+    }
+}
