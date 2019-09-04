@@ -7,7 +7,7 @@ export default class Animation {
         this.scene = new THREE.Scene()
         this.camera = new THREE.PerspectiveCamera()
         this.camera.position.set(
-            0, 0, 10
+            0, 0, 8.8
         )
         this.camera.lookAt(new THREE.Vector3(
             0, 0, 0

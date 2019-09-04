@@ -19,10 +19,12 @@ export default class SphereAnimation extends React.Component {
 
     render() {
         return (
-            <canvas
-                class="sphere-canvas"
-                ref={this.canvasRef}
-            />
+            <div className="canvas-container">
+                <canvas
+                    class="sphere-canvas"
+                    ref={this.canvasRef}
+                />
+            </div>
         )
     }
 }
