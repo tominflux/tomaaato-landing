@@ -11,6 +11,10 @@ section {
     height: 100vh;
 }
 
+a {
+    outline: none;
+}
+
 .landing {
     text-align: center;
 }
@@ -19,7 +23,7 @@ section {
     width: 100%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
     .landing .row {
         margin-left: 0;
         margin-right: 0;
@@ -48,9 +52,30 @@ section {
 }
 
 .details .row {
-    margin-bottom: 22pt;
+    margin-bottom: 28.66pt;
 }
+
+.details h3 {
+    margin-left: 90pt;
+    margin-top: 32pt;
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .details h3 {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
 
 .details img {
     max-width: 36px;
+}
+
+.details .col-9 {
+    text-align: left;
+    padding-left: 32pt;
+    line-height: 36px;
+    font-size: 14pt;
 }
