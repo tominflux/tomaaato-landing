@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Octicon, {Person, Mention, MarkGithub} from '@primer/octicons-react'
 import Row from './Row';
+import Heading from './Heading';
 
 export default class Details extends React.Component {
     constructor() {
@@ -35,9 +36,7 @@ export default class Details extends React.Component {
         return <>
             <div className="row enquiries">
                 <div className="col text-left">
-                    <h2>
-                        Enquiries...
-                    </h2>
+                    <Heading />
                 </div>
             </div>
             <div
