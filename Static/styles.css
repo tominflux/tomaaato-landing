@@ -8,7 +8,8 @@ section {
     display: inline-block;
     position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    padding-bottom: 64pt;
 }
 
 a {
@@ -51,31 +52,100 @@ a {
     }
 }
 
-.details .row {
+
+.enquiries h2 {
+    margin-left: 90pt;
+    margin-top: 32pt;
     margin-bottom: 28.66pt;
 }
 
-.details h3 {
-    margin-left: 90pt;
-    margin-top: 32pt;
-    margin-bottom: 0;
-}
-
 @media (max-width: 767px) {
-    .details h3 {
+    .enquiries h2 {
         margin-left: 0;
         text-align: center;
     }
 }
 
+.details .row {
+    margin-bottom: 28.66pt;
+}
 
 .details img {
     max-width: 36px;
 }
 
+.details .col-3 {
+    text-align: center;
+}
+
 .details .col-9 {
-    text-align: left;
     padding-left: 32pt;
     line-height: 36px;
     font-size: 14pt;
+}
+
+
+.wishart {
+    width: 100%;
+    position: relative;
+    z-index: 11;
+    font-family: "Cuprum", serif;
+}
+.wishart .banner {
+    background-color: black;
+    max-width: 640pt;
+    min-height: 20vh;
+    margin-top: 18.8vh;
+    transform: scale(0.66);
+}
+.wishart .row {
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(0pt 4pt 4pt rgba(0, 0, 0, 0.44));
+}
+.wishart .col-6 {
+    z-index: 1;
+}
+
+.wishart .left {
+    background-color: #fff;
+    transform: skewX(20deg) translateX(-50%) scaleX(1.0);
+}
+
+.wishart .right {
+    background-color: #7cd4e2;
+    transform: skewX(20deg) translateX(66%) scaleX(1.0) ;
+}
+.wishart .logo {
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    margin-top: 12pt;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -44%);
+}
+.wishart .logo img {
+    height: 20vh;
+    position: relative;
+    z-index: 10;
+    filter: drop-shadow(0pt 6pt 2pt rgba(0, 0, 0, 0.99));
+}
+.wishart .logo p {
+    position: relative;
+}
+@media (orientation: landscape) {
+    .wishart .logo p {
+        font-size: 6.66vh;
+    }
+}
+@media (orientation: portrait) {
+    .wishart .logo p {
+        font-size: 6.66vw;
+    }
+}
+.wishart .logo p i {
+    margin-left: 33%;
 }
