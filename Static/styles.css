@@ -1,3 +1,13 @@
+
+@font-face {
+    font-family: DINLight;
+    src: url(/fonts/DINLight.ttf);
+}
+@font-face {
+    font-family: DINRegular;
+    src: url(/fonts/DINRegular.ttf);
+}
+
 body {
     font-family: Andale Mono, monospace;
     background-color: #060516;
@@ -14,11 +24,45 @@ section {
 
 a {
     outline: none;
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+}
+
+h2 {
+    font-family: DINRegular;
+    font-size: 42pt;
+    letter-spacing: 2pt;
+    color: rgba(255,255,255,0.8333);
 }
 
 .landing {
     text-align: center;
     background: linear-gradient(0deg, rgba(255,255,255,0.11) 0%, rgba(0,0,0,0) 44%);
+}
+
+.landing h1 {
+    position: fixed;
+    padding-top: 32pt;
+    font-size: 20pt;
+    font-family: DINLight;
+    transition: opacity 1.33s ease
+}
+
+.landing .title-placeholder {
+    display: inline-block;
+    padding-top: 32pt;
+    width: 100%;
+    height: 64pt;
+}
+
+@media (min-width: 993px) {
+    .landing h1 {
+        text-align: left;
+        padding-left: 64pt;
+    }
 }
 
 .landing .row {
@@ -66,7 +110,7 @@ a {
 
 .enquiries h2 {
     position: relative;
-    margin-left: 90pt;
+    margin-left: 36pt;
     margin-top: 32pt;
     margin-bottom: 12pt;
 }
@@ -81,6 +125,7 @@ a {
 .details {
     margin-top: 36pt;
 }
+
 
 .details .row {
     margin-bottom: 28.66pt;
@@ -104,6 +149,28 @@ a {
     background: linear-gradient(0deg, rgba(255,255,255,0.33) 0%, rgba(255,255,255,0.11) 100%);
 }
 
+.portfolio h2 {
+    text-align: center;
+}
+
+.portfolio .horizontal-spacer {
+    position: relative;
+    left: 12%;
+    width: 88%;
+    margin-top: 8pt;
+    border-top: 2pt dotted rgba(255, 255, 255, 0.66);
+}
+
+.portfolio .vertical-spacer {
+    position: absolute;
+    width: 88%;
+    height: 100%;
+    top: -11%;
+    border-right: 2pt dotted rgba(255, 255, 255, 0.66);
+    display: inline-block;
+    z-index: -10;
+}
+
 .wishart {
     width: 100%;
     position: relative;
@@ -114,8 +181,9 @@ a {
     background-color: black;
     max-width: 640pt;
     min-height: 20vh;
-    margin-top: 18.8vh;
+    margin-top: 12vh;
     transform: scale(0.66);
+    transition: transform 333ms ease;
 }
 .wishart .row {
     position: relative;
