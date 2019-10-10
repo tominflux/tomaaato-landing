@@ -2,6 +2,7 @@ import * as React from 'react'
 import Octicon, {Person, Mention, MarkGithub} from '@primer/octicons-react'
 import Row from './Row';
 import Heading from './Heading';
+import Separator from './Separator';
 
 export default class Details extends React.Component {
     constructor() {
@@ -39,6 +40,7 @@ export default class Details extends React.Component {
                     <Heading />
                 </div>
             </div>
+            <Separator />
             <div
                 style={{
                     display: "inline-block",

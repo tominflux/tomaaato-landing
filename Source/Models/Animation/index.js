@@ -35,6 +35,7 @@ export default class Animation {
         this.renderer.setClearColor( 
             0x000000, 0
         )
+        this.adjustAspectRatio()
     }
 
 
@@ -69,6 +70,7 @@ export default class Animation {
             this.canvasWidth = newWidth
             this.canvasHeight = newHeight
         }
+        this.camera.updateProjectionMatrix()    
     }
 
 
