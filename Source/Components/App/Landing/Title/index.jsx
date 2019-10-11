@@ -48,6 +48,10 @@ export default class Title extends React.Component {
                         this.setState({ hovering: false })
                     }}
                 >
+                    <img
+                        src="/imgs/tomaaato-logo-3.svg"
+                        alt="tomaaato.xyz logo"
+                    />
                     tomaaato.xyz - Coming Soon
                 </h1>
                 <div
