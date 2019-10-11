@@ -4,7 +4,8 @@ export default class Title extends React.Component {
     constructor() {
         super()
         this.state = {
-            scrollTop: true
+            scrollTop: true,
+            hovering: false
         }
     }
 
@@ -14,19 +15,22 @@ export default class Title extends React.Component {
     }
 
     componentWillUnmount() {
-        window.removeEventListener("scroll", this.scrollHandle)
+        window.removeEventListener(
+            "scroll", this.scrollHandle
+        )
     }
 
     checkScroll() {
         let doc = document.documentElement
-        let top = (
-            (window.pageYOffset || doc.scrollTop)  
-                - (doc.clientTop || 0)
+        let top = (window.pageYOffset || doc.scrollTop)  
+            - (doc.clientTop || 0)
+        this.setState({ scrollTop: (top < 180) })
+    }
+
+    get litUp() {
+        return (
+            this.state.scrollTop || this.state.hovering
         )
-        console.log(top)
-        this.setState({
-            scrollTop: (top < 180)
-        })
     }
 
     render() {
@@ -34,8 +38,14 @@ export default class Title extends React.Component {
             <>
                 <h1
                     style={{
-                        opacity: (this.state.scrollTop ? 
-                            "inherit" : 0.44)
+                        opacity: (this.litUp ? 
+                            "inherit" : 0.22)
+                    }}
+                    onMouseEnter={()=>{
+                        this.setState({ hovering: true })
+                    }}
+                    onMouseLeave={()=>{
+                        this.setState({ hovering: false })
                     }}
                 >
                     tomaaato.xyz - Coming Soon
