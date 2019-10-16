@@ -3,6 +3,7 @@ import SphereAnimation from './SphereAnimation';
 import Details from './Details';
 import RainDrops from './RainDrops';
 import Title from './Title';
+import TorusAnimation from './TorusAnimation';
 
 export default class Landing extends React.Component {
     render() {
@@ -15,7 +16,7 @@ export default class Landing extends React.Component {
                 <Title />
                 <div className="row align-items-center">
                     <div className="col-lg-6">
-                        <SphereAnimation />
+                        <TorusAnimation />
                     </div>
                     <div className="col-lg-6 text-left">
                         <Details />
