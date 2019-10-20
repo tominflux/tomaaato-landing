@@ -164,7 +164,14 @@ h2 {
     background: linear-gradient(0deg, rgba(255,255,255,0.33) 0%, rgba(255,255,255,0.11) 100%);
 }
 
+@media (max-width: 767px) {
+    .portfolio {
+        padding-top: 64pt;
+    }
+}
+
 .portfolio h2 {
+    position: relative;
     text-align: center;
 }
 

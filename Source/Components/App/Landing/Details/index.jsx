@@ -55,7 +55,7 @@ export default class Details extends React.Component {
                         display: "inline-block",
                         overflow: "hidden",
                         transition: "height 1.33s ease",
-                        width: "66%",
+                        minWidth: "66%",
                         height: this.state.height,
                         opacity: this.state.opacity
                     }}
