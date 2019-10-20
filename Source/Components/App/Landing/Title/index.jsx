@@ -47,6 +47,9 @@ export default class Title extends React.Component {
                     onMouseLeave={()=>{
                         this.setState({ hovering: false })
                     }}
+                    onClick={()=>{
+                        window.scrollTo(0, 0)
+                    }}
                 >
                     <img
                         src="/imgs/tomaaato-logo-3.svg"

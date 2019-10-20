@@ -6,7 +6,7 @@ export default class Heading extends React.Component {
         this.state = {
             displayText: "" 
         }
-        this.fullText = "Enquiries..."
+        this.fullText = "Enquiries"
         this.typePeriod = 66
     }
 

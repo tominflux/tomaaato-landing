@@ -8,6 +8,10 @@
     src: url(/fonts/DINRegular.ttf);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Andale Mono, monospace;
     background-color: #060516;
@@ -49,7 +53,7 @@ h2 {
     font-size: 20pt;
     font-family: DINLight;
     transition: opacity 1.33s ease;
-    cursor: default;
+    cursor: pointer;
     z-index: 10;
 }
 
