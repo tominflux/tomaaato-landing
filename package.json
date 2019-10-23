@@ -34,5 +34,8 @@
     "reactify": "^1.1.1",
     "three": "^0.108.0",
     "uglifyify": "^5.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
   }
 }
