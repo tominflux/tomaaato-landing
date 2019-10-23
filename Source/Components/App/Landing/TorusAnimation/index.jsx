@@ -21,7 +21,7 @@ export default class TorusAnimation extends React.Component {
         return (
             <div className="canvas-container">
                 <canvas
-                    class="sphere-canvas"
+                    className="sphere-canvas"
                     ref={this.canvasRef}
                 />
             </div>

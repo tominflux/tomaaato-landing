@@ -5,7 +5,7 @@ export default class Separator extends React.Component {
     constructor() {
         super()
         this.state = {
-            desiredWidth: window.innerWidth * 1.66,
+            desiredWidth: 0,
             characterCount: 0,
             missingIndex: 0,
             left: 0
@@ -15,6 +15,7 @@ export default class Separator extends React.Component {
     }
 
     componentDidMount() {
+        this.setState({ desiredWidth: window.innerWidth * 1.66 })
         this.resizeHandle = () => {this.onResize()}
         window.addEventListener("resize", this.resizeHandle)
         this.onUpdate()
@@ -71,8 +72,8 @@ export default class Separator extends React.Component {
                             i < this.state.missingIndex + 4 ||
                             i < this.state.missingIndex + 4 -
                                 this.state.characterCount
-                        ) ? <Octicon icon={Dash} size={16}/> :
-                            <Octicon icon={PrimitiveDot} size={16}/> 
+                        ) ? <Octicon icon={Dash} size={16} key={i}/> :
+                            <Octicon icon={PrimitiveDot} size={16} key={i}/> 
                     }
                     &nbsp;&nbsp;&nbsp;
                 </>
