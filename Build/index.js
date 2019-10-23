@@ -10,8 +10,8 @@ fileProcesses.cleanOrCreateDirectory("./ES5")
 
 //TRANSPILE ES6 -> ES5
 child.spawnSync(
-    "babel", [
-        "Source", "--out-dir", "./ES5"
+    "npx", [
+        "babel", "Source", "--out-dir", "./ES5"
     ],
     {shell: true, stdio: [0, 1, 2]}
 )

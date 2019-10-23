@@ -19,12 +19,9 @@
   },
   "homepage": "https://github.com/MakingUtopia/landing#readme",
   "dependencies": {
-    "@babel/cli": "^7.6.4",
-    "@babel/core": "^7.6.4",
-    "@babel/preset-env": "^7.6.3",
-    "@babel/preset-react": "^7.6.3",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
     "@primer/octicons-react": "^9.1.1",
-    "babel-cli": "^7.0.0-beta.3",
     "babel-core": "^7.0.0-beta.3",
     "babelify": "^10.0.0",
     "browserify": "^16.5.0",
@@ -36,5 +33,9 @@
     "reactify": "^1.1.1",
     "three": "^0.108.0",
     "uglifyify": "^5.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4"
   }
 }
