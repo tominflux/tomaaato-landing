@@ -5,6 +5,7 @@ export default class Title extends React.Component {
         super()
         this.state = {
             scrollTop: true,
+            display: false,
             hovering: false
         }
     }
@@ -12,12 +13,16 @@ export default class Title extends React.Component {
     componentDidMount() {
         this.scrollHandle = () => { this.checkScroll() }
         window.addEventListener("scroll", this.scrollHandle)
+        this.displayHandle = setTimeout(()=>{
+            this.setState({ display: true })
+        }, 1666)
     }
 
     componentWillUnmount() {
         window.removeEventListener(
             "scroll", this.scrollHandle
         )
+        clearTimeout(this.displayHandle)
     }
 
     checkScroll() {
@@ -33,13 +38,19 @@ export default class Title extends React.Component {
         )
     }
 
+    get opacity() {
+        if (this.state.display === true) 
+            return this.litUp ? "inherit" : 0.22
+        else 
+            return 0.0
+    }
+
     render() {
         return (
             <>
                 <h1
                     style={{
-                        opacity: (this.litUp ? 
-                            "inherit" : 0.22)
+                        opacity: this.opacity
                     }}
                     onMouseEnter={()=>{
                         this.setState({ hovering: true })
