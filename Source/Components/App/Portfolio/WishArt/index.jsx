@@ -4,9 +4,36 @@ export default class WishArt extends React.Component {
     constructor() {
         super()
         this.state = {
-            hover: false
+            hover: false,
+            fastTransition: false
         }
     }
+
+    componentDidUpdate() {
+        if (this.props.shown && this.state.fastTransition !== true) {
+            setTimeout(()=>{
+                this.setState({ fastTransition: true })
+            }, 333)
+        }
+    }
+
+    get transition() {
+        return this.state.fastTransition ? 
+            "transform 0.33s ease" : 
+            "transform 1.33s ease, opacity 0.44s ease"
+    }
+
+    get transform() {
+        if (this.state.hover)
+            return "scale(0.70)"
+        else
+            return this.props.shown ? "scale(0.66)" : "scale(0.22)"
+    }
+
+    get opacity() {
+        return this.props.shown ? 1.0 : 0.0
+    }
+
     render() {
         return (
             <a 
@@ -23,8 +50,9 @@ export default class WishArt extends React.Component {
                 <div 
                     className="banner row text-center"
                     style={{
-                        transform: (this.state.hover ? 
-                            "scale(0.70)" : "scale(0.66)")
+                        transition: this.transition,
+                        opacity: this.opacity,
+                        transform: this.transform
                     }}
                 >
                     <div className="col-3 left">

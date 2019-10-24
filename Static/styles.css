@@ -174,9 +174,17 @@ h2 {
     }
 }
 
+.portfolio .content {
+    transition: opacity 1.33s ease;
+}
+
 .portfolio h2 {
     position: relative;
     text-align: center;
+}
+
+.portfolio a {
+    transition: transform 1.0s ease, opacity 0.333s ease;
 }
 
 .portfolio .horizontal-spacer {
@@ -209,7 +217,7 @@ h2 {
     min-height: 20vh;
     margin-top: 12vh;
     transform: scale(0.66);
-    transition: transform 333ms ease;
+    transition: transform 1.0s ease;
 }
 .wishart .row {
     position: relative;
