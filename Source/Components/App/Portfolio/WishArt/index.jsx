@@ -20,7 +20,7 @@ export default class WishArt extends React.Component {
     get transition() {
         return this.state.fastTransition ? 
             "transform 0.33s ease" : 
-            "transform 1.33s ease, opacity 0.44s ease"
+            "transform 0.66s ease, opacity 0.44s ease"
     }
 
     get transform() {

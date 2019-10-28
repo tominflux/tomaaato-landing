@@ -25,7 +25,7 @@ export default class Portfolio extends React.Component {
             this.setState({ scrolled: true })
             setTimeout(()=>{
                 this.setState({ shown: true })
-            }, 666)
+            }, 444)
         }
     }
 
