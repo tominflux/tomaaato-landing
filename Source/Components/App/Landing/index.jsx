@@ -6,6 +6,20 @@ import Title from './Title';
 import TorusAnimation from './TorusAnimation';
 
 export default class Landing extends React.Component {
+    constructor() {
+        super()
+        this.state = {
+            showSphere: false
+        }
+    }
+
+    componentDidUpdate() {
+        document.body.style.backgroundColor = (
+            this.state.showSphere ?
+                "#160505" : "#060516"
+        )
+    }
+
     render() {
         return (
             <section
@@ -15,8 +29,19 @@ export default class Landing extends React.Component {
                 {/*<RainDrops />*/}
                 <Title />
                 <div className="row align-items-center">
-                    <div className="col-lg-6">
-                        <TorusAnimation />
+                    <div 
+                        className="col-lg-6"
+                        onClick={()=>{
+                            this.setState({
+                                showSphere: !this.state.showSphere
+                            })
+                        }}
+                    >
+                        {(
+                            this.state.showSphere ?
+                                <SphereAnimation /> :
+                                <TorusAnimation />
+                        )}
                     </div>
                     <div className="col-lg-6 text-left">
                         <Details />

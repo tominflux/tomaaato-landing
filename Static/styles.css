@@ -217,7 +217,7 @@ h2 {
     min-height: 20vh;
     margin-top: 12vh;
     transform: scale(0.66);
-    transition: transform 1.0s ease;
+    transition: transform 0.66s ease;
 }
 .wishart .row {
     position: relative;

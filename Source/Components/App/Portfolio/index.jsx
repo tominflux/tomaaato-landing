@@ -25,12 +25,12 @@ export default class Portfolio extends React.Component {
             this.setState({ scrolled: true })
             setTimeout(()=>{
                 this.setState({ shown: true })
-            }, 999)
+            }, 666)
         }
     }
 
     get opacity() {
-        return this.state.scrolled ? 1.0 : 0.0
+        return this.state.scrolled ? 1.0 : 0.11
     }
 
     render() {
