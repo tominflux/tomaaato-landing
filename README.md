@@ -1,6 +1,6 @@
 # tomaaato.xyz - Landing Site
 
-[tomaaato.xyz](http://tomaaato.xyz/) is hosted on Heroku and deployed via this repo. (Meaning it's configured to be heroku-deployment ready.
+[tomaaato.xyz](http://tomaaato.xyz/) is hosted on Heroku and deployed via this repo. (Meaning it's configured to be heroku-deployment ready).
 
 Most built using React & Bootstrap, Express is also used for a little bit of back-end, and threejs for the geometric animation.
 
