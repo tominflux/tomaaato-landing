@@ -270,3 +270,14 @@ h2 {
 .wishart .logo p i {
     margin-left: 33%;
 }
+
+.mys-wrld {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    margin-top: 48pt;
+}
+.mys-wrld img {
+    max-width: 720pt;
+    filter: drop-shadow(0pt 4pt 4pt rgba(0, 0, 0, 0.44));
+}

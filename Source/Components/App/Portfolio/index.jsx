@@ -1,13 +1,15 @@
 import * as React from 'react'
-import WishArt from './WishArt'
 import Spacers from './Spacers'
+import WishArt from './WishArt'
+import MysWrld from './MysWrld'
 
 export default class Portfolio extends React.Component {
     constructor() {
         super()
         this.state = {
             scrolled: false,
-            shown: false
+            showWishart: false,
+            showMysWrld: false
         }
     }
 
@@ -24,7 +26,12 @@ export default class Portfolio extends React.Component {
         if (window.scrollY > 0.33 * window.innerHeight) {
             this.setState({ scrolled: true })
             setTimeout(()=>{
-                this.setState({ shown: true })
+                this.setState({ showWishart: true })
+            }, 444)
+        }
+        if (window.scrollY > 0.44 * window.innerHeight) {
+            setTimeout(()=>{
+                this.setState({ showMysWrld: true })
             }, 444)
         }
     }
@@ -46,7 +53,8 @@ export default class Portfolio extends React.Component {
                         Portfolio
                     </h2>
                     <Spacers />
-                    <WishArt shown={this.state.shown}/>
+                    <WishArt shown={this.state.showWishart}/>
+                    <MysWrld shown={this.state.showMysWrld}/>
                 </div>
             </section>
         )
