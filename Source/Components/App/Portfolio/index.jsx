@@ -2,6 +2,7 @@ import * as React from 'react'
 import Spacers from './Spacers'
 import WishArt from './WishArt'
 import MysWrld from './MysWrld'
+import Tomosphere from './Tomosphere'
 
 export default class Portfolio extends React.Component {
     constructor() {
@@ -9,7 +10,8 @@ export default class Portfolio extends React.Component {
         this.state = {
             scrolled: false,
             showWishart: false,
-            showMysWrld: false
+            showMysWrld: false,
+            showTomosphere: false
         }
     }
 
@@ -29,9 +31,14 @@ export default class Portfolio extends React.Component {
                 this.setState({ showWishart: true })
             }, 444)
         }
-        if (window.scrollY > 0.44 * window.innerHeight) {
+        if (window.scrollY > 0.55 * window.innerHeight) {
             setTimeout(()=>{
                 this.setState({ showMysWrld: true })
+            }, 444)
+        }
+        if (window.scrollY > 0.99 * window.innerHeight) {
+            setTimeout(()=>{
+                this.setState({ showTomosphere: true })
             }, 444)
         }
     }
@@ -55,6 +62,7 @@ export default class Portfolio extends React.Component {
                     <Spacers />
                     <WishArt shown={this.state.showWishart}/>
                     <MysWrld shown={this.state.showMysWrld}/>
+                    <Tomosphere shown={this.state.showTomosphere}/>
                 </div>
             </section>
         )

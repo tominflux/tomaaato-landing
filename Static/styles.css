@@ -278,6 +278,24 @@ h2 {
     margin-top: 48pt;
 }
 .mys-wrld img {
-    max-width: 720pt;
+    width: 100%;
+    max-width: 700pt;
     filter: drop-shadow(0pt 4pt 4pt rgba(0, 0, 0, 0.44));
+}
+
+.tomosphere {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    margin-top: 48pt;
+}
+.tomosphere .text {
+    text-shadow: 0pt 4pt 4pt rgba(0,0,0,0.44)
+}
+.tomosphere .p1 {
+    font-size: 72pt;
+    margin-bottom: 0;
+}
+.tomosphere .p2 {
+    font-size: 42pt;
 }
