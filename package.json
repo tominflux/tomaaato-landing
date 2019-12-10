@@ -33,6 +33,7 @@
     "react-dom": "^16.9.0",
     "react-router-dom": "^5.1.2",
     "reactify": "^1.1.1",
+    "smtp-server": "^3.5.0",
     "three": "^0.108.0",
     "uglifyify": "^5.0.2"
   }
