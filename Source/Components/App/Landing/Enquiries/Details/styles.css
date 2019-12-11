@@ -1,0 +1,12 @@
+.enquiries__details-container {
+    display: inline-block;
+    width: 100%;
+}
+
+.enquiries__details {
+    display: inline-block;
+    overflow: hidden;
+    transition: height 1.33s ease;
+    min-width: 66%;
+    margin-top: 36pt;
+}

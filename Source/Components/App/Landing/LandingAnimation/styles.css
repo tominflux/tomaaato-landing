@@ -1,0 +1,22 @@
+.landing-animation {
+    display: inline-block;
+    position: relative;
+    margin-top: 0vh;
+}
+@media (orientation: landscape) {
+    .landing-animation {
+        left: 22vh;
+        width: 100%;
+        height: 90vh;
+    }
+}
+@media (orientation: portrait) {
+    .landing-animation {
+        width: 90vw;
+        height: 90vw;
+    }
+}
+
+.landing-animation__canvas {
+    
+}

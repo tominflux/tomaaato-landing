@@ -1,9 +1,9 @@
 import * as React from 'react'
 import SphereAnimation from './SphereAnimation';
-import Details from './Details';
-import RainDrops from './RainDrops';
-import Title from './Title';
+import Enquiries from './Enquiries';
+import Header from './Header';
 import TorusAnimation from './TorusAnimation';
+import './landing.css';
 
 export default class Landing extends React.Component {
     constructor() {
@@ -25,12 +25,10 @@ export default class Landing extends React.Component {
             <section
                 className="landing"
             >
-                {/*<GlowSpots />*/}
-                {/*<RainDrops />*/}
-                <Title />
-                <div className="row align-items-center">
+                <Header />
+                <div className="landing__row row align-items-center">
                     <div 
-                        className="col-lg-6"
+                        className="landing__animation-col col-lg-6"
                         onClick={()=>{
                             this.setState({
                                 showSphere: !this.state.showSphere
@@ -43,8 +41,10 @@ export default class Landing extends React.Component {
                                 <TorusAnimation />
                         )}
                     </div>
-                    <div className="col-lg-6 text-left">
-                        <Details />
+                    <div 
+                        className="landing__enquiries-col col-lg-6 text-left"
+                    >
+                        <Enquiries />
                     </div>
                 </div>
             </section>

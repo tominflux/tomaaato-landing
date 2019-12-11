@@ -1,0 +1,16 @@
+.enquiries__row {
+    margin-bottom: 28.66pt;
+}
+
+.enquiries__icon-col {
+    text-align: center;
+}
+.enquiries__icon {
+    max-width: 36px;
+}
+
+.enquiries__text-col {
+    padding-left: 32pt;
+    line-height: 36px;
+    font-size: 14pt;
+}

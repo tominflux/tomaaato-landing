@@ -1,0 +1,36 @@
+
+@font-face {
+    font-family: DINLight;
+    src: url(/fonts/DINLight.ttf);
+}
+@font-face {
+    font-family: DINRegular;
+    src: url(/fonts/DINRegular.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Andale Mono, monospace;
+    background-color: #060516;
+    color: #fff;
+}
+
+section {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 64pt;
+}
+
+a {
+    outline: none;
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+}

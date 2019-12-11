@@ -1,5 +1,10 @@
-node_modules
+.cache/
+node_modules/
 .git/objects/
 .git/subtree-cache/
-Dist/static/bundle.js
 ES5/
+dist/
+.cache/a3/ec85d122c434f066ffd5deb6dc7d1b.json
+dist/index.html
+dist/index.html
+.cache/a3/ec85d122c434f066ffd5deb6dc7d1b.json

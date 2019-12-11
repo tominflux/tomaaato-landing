@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-export default class Title extends React.Component {
+export default class Header extends React.Component {
     constructor() {
         super()
         this.state = {
@@ -47,8 +47,9 @@ export default class Title extends React.Component {
 
     render() {
         return (
-            <>
+            <header>
                 <h1
+                    className="header__heading"
                     style={{
                         opacity: this.opacity
                     }}
@@ -63,15 +64,16 @@ export default class Title extends React.Component {
                     }}
                 >
                     <img
+                    className="header__logo"
                         src="/imgs/tomaaato-logo-3.svg"
                         alt="tomaaato.xyz logo"
                     />
                     tomaaato.xyz - Coming Soon
                 </h1>
                 <div
-                    className="title-placeholder"
+                    className="header__placeholder"
                 />
-            </>
+            </header>
         )
     }
 }

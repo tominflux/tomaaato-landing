@@ -1,18 +1,15 @@
 import * as React from 'react'
 import Octicon, {Person, Mention, MarkGithub} from '@primer/octicons-react'
-import Row from './Row';
-import Heading from './Heading';
-import Separator from './Separator';
+import './styles.css'
 
 export default class Details extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props)
         this.state = {
             height: "auto",
             opacity: 0.0
         }
         this.ref = React.createRef()
-        this.autoHeight = "auto"
     }
 
     componentDidMount() {
@@ -34,28 +31,17 @@ export default class Details extends React.Component {
     }
 
     render() {
-        return <>
-            <div className="row enquiries">
-                <div className="col text-left">
-                    <Heading />
-                </div>
-            </div>
-            <Separator />
+        return (
             <div
+                className="enquiries__details-container"
                 style={{
-                    display: "inline-block",
-                    width: "100%",
                     height: "calc(" + this.autoHeight + " + 12pt)"
                 }}
             >
                 <div 
                     ref={this.ref}
-                    className="details"
+                    className="enquiries__details"
                     style={{
-                        display: "inline-block",
-                        overflow: "hidden",
-                        transition: "height 1.33s ease",
-                        minWidth: "66%",
                         height: this.state.height,
                         opacity: this.state.opacity
                     }}
@@ -103,6 +89,6 @@ export default class Details extends React.Component {
                     </Row>
                 </div>
             </div>
-        </>
+        )
     }
 }

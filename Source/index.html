@@ -32,10 +32,6 @@
             rel='stylesheet' 
             type='text/css'
         >
-        <link
-            rel="stylesheet"
-            href="/styles.css"
-        />
         <title>Tom Chesters - Bespoke Web Services</title>
         <meta
             name="keywords"
@@ -49,21 +45,19 @@
             name="author"
             content="Thomas Chesters"
         >
-        <link rel="shortcut icon" type="image/png" href="/imgs/tomaaato-logo-2.png">
-        <script>
-            (function (w,d,s,o,f,js,fjs) {
-              w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
-              js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
-              js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
-            }(window, document, 'script', 'plausible', 'https://plausible.io/js/p.js'));
-            plausible('page')
-            plausible('trackPushState') // add this line
-          </script>
+        <link 
+            rel="shortcut icon" 
+            type="image/png" 
+            href="/imgs/tomaaato-logo-2.png"
+        >
+        <link
+            rel="stylesheet"
+            href="./styles.css"
+        />
     </head>
     <body>
-        <div id="app-content">
-            [App-Content]
-        </div>
-        <script src="/bundle.js"></script>
+        <div id="app-content"></div>
+        <script src="./index.jsx"></script>
+        <script src="./plausible.js"></script>
     </body>
 </html>

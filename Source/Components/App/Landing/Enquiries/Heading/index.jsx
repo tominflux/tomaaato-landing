@@ -38,7 +38,7 @@ export default class Heading extends React.Component {
 
     render() {
         return (
-            <h2>
+            <h2 className="enquiries__heading">
                 {this.state.displayText}
             </h2>
         )

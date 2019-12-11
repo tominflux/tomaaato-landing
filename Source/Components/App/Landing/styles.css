@@ -1,0 +1,22 @@
+.landing {
+    text-align: center;
+    background: linear-gradient(0deg, rgba(255,255,255,0.11) 0%, rgba(0,0,0,0) 44%);
+}
+
+.landing__row {
+    width: 100%;
+}
+@media (max-width: 992px) {
+    .landing__row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.landing__animation-col {
+
+}
+
+.landing__enquiries-col {
+
+}

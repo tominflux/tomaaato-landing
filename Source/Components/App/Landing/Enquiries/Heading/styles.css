@@ -1,0 +1,16 @@
+.enquiries__heading {
+    font-family: DINRegular;
+    font-size: 42pt;
+    letter-spacing: 2pt;
+    color: rgba(255,255,255,0.8333);
+    position: relative;
+    margin-left: 36pt;
+    margin-top: 32pt;
+    margin-bottom: 12pt;
+}
+@media (max-width: 767px) {
+    .enquiries__heading {
+        margin-left: 0;
+        text-align: center;
+    }
+}
