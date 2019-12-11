@@ -48,17 +48,17 @@ export default class Tomosphere extends React.Component {
                 target="_blank"
             >
                 <div
-                    className="text"
+                    className="tomosphere__text"
                     style={{
                         transition: this.transition,
                         opacity: this.opacity,
                         transform: this.transform
                     }}
                 >
-                    <p className="p1">
+                    <p className="tomosphere__p1">
                         tomosphere
                     </p>
-                    <p className="p2">
+                    <p className="tomosphere__p2">
                         [Demo Site, 2018]
                     </p>
                 </div>

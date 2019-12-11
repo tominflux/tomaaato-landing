@@ -1,4 +1,5 @@
 import * as React from 'react'
+import './styles.css'
 
 export default class MysWrld extends React.Component {
     constructor() {
@@ -48,6 +49,7 @@ export default class MysWrld extends React.Component {
                 target="_blank"
             >
                 <img
+                    className="mys-wrld__image"
                     src="/imgs/mys-wrld.jpg"
                     alt="MysTopia Screenshot"
                     style={{

@@ -1,0 +1,19 @@
+.tomosphere {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    margin-top: 48pt;
+}
+
+.tomosphere__text {
+    text-shadow: 0pt 4pt 4pt rgba(0,0,0,0.44)
+}
+
+.tomosphere__p1 {
+    font-size: 72pt;
+    margin-bottom: 0;
+}
+
+.tomosphere__p2 {
+    font-size: 42pt;
+}

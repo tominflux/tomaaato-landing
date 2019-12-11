@@ -5,8 +5,8 @@ export default class Spacers extends React.Component {
     render() {
         return (
             <>
-                <div className="horizontal-spacer"/>
-                <div className="vertical-spacer"/>
+                <div className="portfolio__spacer-horizontal"/>
+                <div className="portfolio__spacer-vertical"/>
             </>
         )
     }

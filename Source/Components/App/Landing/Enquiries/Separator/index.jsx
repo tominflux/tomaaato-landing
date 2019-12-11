@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Octicon, {PrimitiveDot, Dash} from '@primer/octicons-react'
 
+
 export default class Separator extends React.Component {
     constructor() {
         super()

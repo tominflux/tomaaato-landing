@@ -1,0 +1,12 @@
+.mys-wrld {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    margin-top: 48pt;
+}
+
+.mys-wrld__image {
+    width: 100%;
+    max-width: 700pt;
+    filter: drop-shadow(0pt 4pt 4pt rgba(0, 0, 0, 0.44));
+}

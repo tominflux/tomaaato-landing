@@ -1,4 +1,5 @@
 import * as React from 'react'
+import './styles.css'
 
 export default class WishArt extends React.Component {
     constructor() {

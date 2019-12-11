@@ -1,4 +1,5 @@
 import * as React from 'react'
+import "./styles.css"
 
 export default class Heading extends React.Component {
     constructor() {

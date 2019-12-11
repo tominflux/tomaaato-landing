@@ -6,7 +6,6 @@ export default class SphereAnimation extends React.Component {
     constructor() {
         super()
         this.model = new Model()
-
     }
     
     render() {

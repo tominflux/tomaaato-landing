@@ -3,7 +3,7 @@ import SphereAnimation from './SphereAnimation';
 import Enquiries from './Enquiries';
 import Header from './Header';
 import TorusAnimation from './TorusAnimation';
-import './landing.css';
+import './styles.css';
 
 export default class Landing extends React.Component {
     constructor() {

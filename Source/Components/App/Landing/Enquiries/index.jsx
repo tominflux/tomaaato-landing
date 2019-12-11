@@ -2,6 +2,7 @@ import * as React from 'react'
 import Heading from './Heading';
 import Separator from './Separator';
 import Details from './Details';
+import "./styles.css"
 
 export default class Enquiries extends React.Component {
     render() {
