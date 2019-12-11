@@ -1,4 +1,5 @@
 import * as React from 'react'
+import logoImage from './logo.svg'
 import './styles.css'
 
 export default class Header extends React.Component {
@@ -66,7 +67,7 @@ export default class Header extends React.Component {
                 >
                     <img
                     className="header__logo"
-                        src="/imgs/tomaaato-logo-3.svg"
+                        src={logoImage}
                         alt="tomaaato.xyz logo"
                     />
                     tomaaato.xyz - Coming Soon

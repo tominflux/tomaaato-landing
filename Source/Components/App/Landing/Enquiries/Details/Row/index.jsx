@@ -38,17 +38,17 @@ export default class Row extends React.Component {
     get iconElement() {
         return React.cloneElement(
             this.props.icon, {
-                className: "equiries__icon"
+                className: "enquiries__icon"
             }
         )
     }
 
     get elementContents() {
         return <>
-            <div className="col-3 enquires__icon-col">
+            <div className="col-3 enquiries__icon-col">
                 {this.iconElement}
             </div>
-            <div className="col-9 enquires__text-col">
+            <div className="col-9 enquiries__text-col">
                 {this.props.children}
             </div>
         </>

@@ -1,5 +1,8 @@
 import * as React from 'react'
+import Row from './Row'
 import Octicon, {Person, Mention, MarkGithub} from '@primer/octicons-react'
+import instagramImage from './instagram.svg'
+import linkedinImage from './linkedin.png'
 import './styles.css'
 
 export default class Details extends React.Component {
@@ -67,7 +70,7 @@ export default class Details extends React.Component {
                         href="https://www.linkedin.com/in/tomaaatoxyz/"
                         icon={
                             <img 
-                                src="/imgs/linkedin.png"
+                                src={linkedinImage}
                                 alt="LinkedIn icon."
                             />
                         }
@@ -79,7 +82,7 @@ export default class Details extends React.Component {
                         href="https://instagram.com/tomaaato_xyz/"
                         icon={
                             <img 
-                                src="/imgs/instagram.svg"
+                                src={instagramImage}
                                 alt="Instagram icon."
                             />
                         }
