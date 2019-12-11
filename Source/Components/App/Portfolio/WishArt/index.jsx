@@ -37,7 +37,7 @@ export default class WishArt extends React.Component {
     render() {
         return (
             <a 
-                className="wishart"
+                className="wishart portfolio__link"
                 onMouseEnter={()=>{
                     this.setState({ hover: true })
                 }}
@@ -48,32 +48,33 @@ export default class WishArt extends React.Component {
                 target="_blank"
             >
                 <div 
-                    className="banner row text-center"
+                    className="wishart__banner row text-center"
                     style={{
                         transition: this.transition,
                         opacity: this.opacity,
                         transform: this.transform
                     }}
                 >
-                    <div className="col-3 left">
+                    <div className="wishart__col-left col-3">
                         <div className="noise"/>
                     </div>
-                    <div className="col-6">
+                    <div className="wishart__col-middle col-6">
                         <div
-                            className="logo"
+                            className="wishart__logo-container"
                         >
                             <img
+                                className="wishart__logo-image"
                                 src="/imgs/wishart.svg"
                                 alt="Logo reading 'Wish/Art'"
                             />
-                            <p>
-                                <i>
+                            <p className="wishart__logo-paragraph">
+                                <i className="wishart__logo-italics">
                                     films
                                 </i>
                             </p>
                         </div>
                     </div>
-                    <div className="col-3 right">
+                    <div className="wishart__col-right col-3">
                         <div className="noise"/>
                     </div>
                 </div>

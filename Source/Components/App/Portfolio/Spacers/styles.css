@@ -1,0 +1,17 @@
+.portfolio__spacer-horizontal {
+    position: relative;
+    left: 12%;
+    width: 88%;
+    margin-top: 8pt;
+    border-top: 2pt dotted rgba(255, 255, 255, 0.66);
+}
+
+.portfolio__spacer-vertical {
+    position: absolute;
+    width: 88%;
+    height: 100%;
+    top: -11%;
+    border-right: 2pt dotted rgba(255, 255, 255, 0.66);
+    display: inline-block;
+    z-index: -10;
+}

@@ -1,0 +1,69 @@
+.wishart {
+    width: 100%;
+    position: relative;
+    z-index: 11;
+    font-family: "Cuprum", serif;
+}
+
+.wishart__banner {
+    background-color: black;
+    max-width: 640pt;
+    min-height: 20vh;
+    margin-top: 12vh;
+    transform: scale(0.66);
+    transition: transform 0.66s ease;
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(0pt 4pt 4pt rgba(0, 0, 0, 0.44));
+}
+
+.wishart__col-middle {
+    z-index: 1;
+}
+
+.wishart__col-left {
+    background-color: #fff;
+    transform: skewX(20deg) translateX(-50%) scaleX(1.0);
+}
+
+.wishart__col-right {
+    background-color: #7cd4e2;
+    transform: skewX(20deg) translateX(66%) scaleX(1.0);
+}
+
+.wishart__logo-container {
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    margin-top: 12pt;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -44%);
+}
+
+.wishart__logo-image {
+    height: 20vh;
+    position: relative;
+    z-index: 10;
+    filter: drop-shadow(0pt 6pt 2pt rgba(0, 0, 0, 0.99));
+}
+
+.wishart__logo-paragraph {
+    position: relative;
+}
+@media (orientation: landscape) {
+    .wishart__logo-paragraph {
+        font-size: 6.66vh;
+    }
+}
+@media (orientation: portrait) {
+    .wishart__logo-paragraph {
+        font-size: 6.66vw;
+    }
+}
+
+.wishart__logo-italics {
+    margin-left: 33%;
+}

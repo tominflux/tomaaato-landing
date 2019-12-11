@@ -1,0 +1,21 @@
+.portfolio {
+    background: linear-gradient(0deg, rgba(255,255,255,0.33) 0%, rgba(255,255,255,0.11) 100%);
+}
+@media (max-width: 767px) {
+    .portfolio {
+        padding-top: 64pt;
+    }
+}
+
+.portfolio__content {
+    transition: opacity 1.33s ease;
+}
+
+.portfolio__heading {
+    position: relative;
+    text-align: center;
+}
+
+.portfolio__link {
+    transition: transform 1.0s ease, opacity 0.333s ease;
+}

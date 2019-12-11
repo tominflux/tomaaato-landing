@@ -3,6 +3,7 @@ import Spacers from './Spacers'
 import WishArt from './WishArt'
 import MysWrld from './MysWrld'
 import Tomosphere from './Tomosphere'
+import "./styles.css"
 
 export default class Portfolio extends React.Component {
     constructor() {
@@ -53,10 +54,10 @@ export default class Portfolio extends React.Component {
                 className="portfolio"
             >
                 <div 
-                    className="content"
+                    className="portfolio__content"
                     style={{ opacity: this.opacity }}
                 >
-                    <h2>
+                    <h2 className="portfolio__heading">
                         Portfolio
                     </h2>
                     <Spacers />
