@@ -15,7 +15,7 @@ let port = parseInt(process.env.PORT) || 3000
 async function run() {
     //Generate HTML
     let boilerplateHTML = await fs.readFileSync(
-        "./Source/boilerplate.html"
+        "./Source/index.html"
     ).toString()
     let rootElement = React.createElement(
         ReactRouterDOM.StaticRouter,
@@ -29,12 +29,12 @@ async function run() {
     //Run server
     app.use(compression())
     app.get(
-        "(?!(/bundle.js|/styles.css|/imgs|/fonts|/css))*", 
-        (req, res) => { res.send(appHTML) }
+        "(?!(/public_html))*", 
+        (req, res) => { res.send("Hello Worl") }
     )
     app.use(
-        "/",
-        express.static('./Static')
+        "/public_html/",
+        express.static('./dist')
     )
     app.listen(
         port, () => {

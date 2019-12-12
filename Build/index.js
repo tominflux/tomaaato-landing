@@ -16,6 +16,13 @@ child.spawnSync(
     {shell: true, stdio: [0, 1, 2]}
 )
 
+
+
+
+
+//NO LONGER USING BROWSERIFY \/\/
+
+/*
 //Build bundle.js
 console.log("Building App Bundle...")
 browserify(
@@ -38,3 +45,4 @@ browserify(
 .on("finish", ()=> {
     console.log("App Bundle Built")
 })
+*/

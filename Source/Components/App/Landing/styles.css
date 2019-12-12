@@ -13,10 +13,6 @@
     }
 }
 
-.landing__animation-col {
-
-}
-
 .landing__enquiries-col {
-
+    position: static;
 }

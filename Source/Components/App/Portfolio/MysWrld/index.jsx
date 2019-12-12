@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Banner from './mys-wrld.jpg'
 import './styles.css'
 
 export default class MysWrld extends React.Component {
@@ -50,7 +51,7 @@ export default class MysWrld extends React.Component {
             >
                 <img
                     className="mys-wrld__image"
-                    src="/imgs/mys-wrld.jpg"
+                    src={Banner}
                     alt="MysTopia Screenshot"
                     style={{
                         transition: this.transition,

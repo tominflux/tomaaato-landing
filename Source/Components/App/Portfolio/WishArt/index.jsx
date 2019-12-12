@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Logo from './wishart.svg'
 import './styles.css'
 
 export default class WishArt extends React.Component {
@@ -65,7 +66,7 @@ export default class WishArt extends React.Component {
                         >
                             <img
                                 className="wishart__logo-image"
-                                src="/imgs/wishart.svg"
+                                src={Logo}
                                 alt="Logo reading 'Wish/Art'"
                             />
                             <p className="wishart__logo-paragraph">
