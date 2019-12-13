@@ -12,28 +12,37 @@ const AppComponent = _interopRequireDefault(require('../ES5/Components/App'))
 let app = express()
 let port = parseInt(process.env.PORT) || 3000
 
-async function run() {
-    //Generate HTML
-    let boilerplateHTML = await fs.readFileSync(
-        "./Source/index.html"
+function renderHTML() {
+    //Read empty HTML
+    let emptyHTML = fs.readFileSync(
+        "./dist/index.html"
     ).toString()
+    //Render React HTML
     let rootElement = React.createElement(
         ReactRouterDOM.StaticRouter,
         { location: "/" }, 
         React.createElement( AppComponent["default"] )
     )
-    let appHTML = boilerplateHTML.replace(
-        "[App-Content]",
+    let reactHTML = 
         ReactDOMServer.renderToString( rootElement )
+    //Compose App HTML
+    let appHTML = emptyHTML.replace(
+        "[App-Content]", reactHTML
     )
+    return appHTML
+}
+
+async function run() {
     //Run server
     app.use(compression())
     app.get(
-        "(?!(/public_html))*", 
-        (req, res) => { res.send("Hello Worl") }
+        "(\/$)", 
+        (req, res) => { 
+            res.send( renderHTML() ) 
+        }
     )
     app.use(
-        "/public_html/",
+        "/",
         express.static('./dist')
     )
     app.listen(
