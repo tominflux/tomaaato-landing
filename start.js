@@ -5,10 +5,9 @@ child.spawnSync(
     //Execute in context of node so that containers 
     //can do this without requiring cli tool to be
     //installed to OS.
-    "npx",
+    "node",
     [        
-        "parcel", "./Source/Static/index.html",
-        "-d", "./dist/browser"
+        "./Source/Server/Development/index.js",
     ],
     //Ensure process can print to console.
     {shell: true, stdio: [0, 1, 2]}
