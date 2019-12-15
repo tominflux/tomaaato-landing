@@ -1,11 +1,11 @@
 
 @font-face {
     font-family: DINLight;
-    src: url(/fonts/DINLight.ttf);
+    src: url(./fonts/DINLight.ttf);
 }
 @font-face {
     font-family: DINRegular;
-    src: url(/fonts/DINRegular.ttf);
+    src: url(./fonts/DINRegular.ttf);
 }
 
 html {
