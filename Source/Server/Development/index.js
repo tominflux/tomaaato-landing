@@ -9,6 +9,8 @@ const bundler = new Bundler("./Source/Static/index.html", {});
 async function run() {
     //Run server
     app.use(compression())
+    //Use parcel middleware to bundle site codebase on the fly.
+    //(Good for development, not for production)
     app.use(
         bundler.middleware()
     )

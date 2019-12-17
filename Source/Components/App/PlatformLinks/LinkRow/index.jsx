@@ -1,7 +1,7 @@
 import * as React from 'react'
 import './styles.css'
 
-export default class Row extends React.Component {
+export default class LinkRow extends React.Component {
     constructor() {
         super()
         this.state = {
@@ -15,7 +15,7 @@ export default class Row extends React.Component {
 
     get elementProps() {
         return {
-            className: "row enquiries__row",
+            className: "row platform-links__row",
             onMouseEnter: ()=>{
                 this.setState({hovering: true})
             },
@@ -42,9 +42,9 @@ export default class Row extends React.Component {
         )
         return React.cloneElement(
             this.props.icon, {
-                className: "enquiries__icon" + (
+                className: "platform-links__icon" + (
                     invert ? 
-                        " enquiries__icon--invert" : ""    
+                        " platform-links__icon--invert" : ""    
                 )
             }
         )
@@ -52,10 +52,10 @@ export default class Row extends React.Component {
 
     get elementContents() {
         return <>
-            <div className="col-3 enquiries__icon-col">
+            <div className="col-3 platform-links__icon-col">
                 {this.iconElement}
             </div>
-            <div className="col-9 enquiries__text-col">
+            <div className="col-9 platform-links__text-col">
                 {this.props.children}
             </div>
         </>
@@ -68,8 +68,4 @@ export default class Row extends React.Component {
             this.elementContents
         )
     }
-}
-Row.defaultProps = {
-    href: "",
-    externalImg: false
 }

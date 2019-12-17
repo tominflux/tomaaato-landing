@@ -1,13 +1,13 @@
 const child = require("child_process")
 
-//Run parcel development server.
+//Rollup server source into single ES5 script.
 child.spawnSync(
     //Execute in context of node so that containers 
-    //can do this without requiring cli tool to be
-    //installed to OS.
+    //can do this without requiring rollup cli to be
+    //installed.
     "node",
     [        
-        "./Source/Server/Development/index.js",
+        "./dist/server/index.js",
     ],
     //Ensure process can print to console.
     {shell: true, stdio: [0, 1, 2]}

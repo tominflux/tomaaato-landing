@@ -18,12 +18,17 @@ body {
     color: #fff;
 }
 
+#app-content {
+    line-height: 0;
+}
+
 section {
     display: inline-block;
     position: relative;
     width: 100%;
     min-height: 100vh;
     padding-bottom: 64pt;
+    line-height: initial;
 }
 
 a {

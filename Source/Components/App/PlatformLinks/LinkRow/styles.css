@@ -1,21 +1,23 @@
-.enquiries__row {
+
+.platform-links__row {
     margin-bottom: 28.66pt;
     width: 100%;
 }
 
-.enquiries__icon-col {
+.platform-links__icon-col {
     text-align: center;
 }
-.enquiries__icon {
+.platform-links__icon {
     max-width: 36px;
 }
 
-.enquiries__text-col {
+.platform-links__text-col {
     padding-left: 32pt;
     line-height: 36px;
     font-size: 14pt;
 }
 
-.enquiries__icon--invert {
+.platform-links__icon--invert {
     filter: invert(100%);
 }
+

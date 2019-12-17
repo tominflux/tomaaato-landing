@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "node build",
-    "start": "node run"
+    "start": "node start"
   },
   "repository": {
     "type": "git",
@@ -38,5 +38,8 @@
     "smtp-server": "^3.5.0",
     "three": "^0.108.0",
     "uglifyify": "^5.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   }
 }

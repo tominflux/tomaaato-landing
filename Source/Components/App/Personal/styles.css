@@ -1,0 +1,14 @@
+.personal {
+    background: linear-gradient(0deg, rgba(255,255,255,0.33) 0%, rgba(255,255,255,0.11) 100%);
+    text-align: center;
+}
+
+.personal__row {
+    width: 100%;
+}
+@media (max-width: 992px) {
+    .personal__row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
