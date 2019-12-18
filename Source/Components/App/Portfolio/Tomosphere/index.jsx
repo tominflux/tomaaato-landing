@@ -1,4 +1,5 @@
 import * as React from 'react'
+import logo from './logo.png'
 import './styles.css'
 
 export default class Tomosphere extends React.Component {
@@ -57,6 +58,11 @@ export default class Tomosphere extends React.Component {
                     }}
                 >
                     <p className="tomosphere__p1">
+                        <img
+                            className="tomosphere__logo"
+                            src={logo}
+                            alt="Tomosphere Logo"
+                        />
                         tomosphere
                     </p>
                     <p className="tomosphere__p2">
