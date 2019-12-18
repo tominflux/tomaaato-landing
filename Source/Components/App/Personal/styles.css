@@ -15,4 +15,21 @@
 
 .personal__left-col {
     text-align: right;
+    height: 100%;
+    padding-top: 90pt;
+    padding-bottom: 48pt;
+    padding-right: 48pt;
+    border-right: 3.33pt groove rgba(0,0,0,0.44);
+}
+
+.personal__heading {
+    font-family: DINRegular;
+    font-size: 42pt;
+    color: rgba(255,255,255,0.8333);
+    margin-right: 72pt;
+    padding-left: 12pt;
+    padding-right: 12pt;
+    padding-bottom: 8pt;
+    border-bottom: 1pt dashed rgba(255, 255, 255, 0.44);
+    display: inline-block;
 }
