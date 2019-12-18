@@ -49,7 +49,7 @@ export default class Header extends React.Component {
 
     render() {
         return (
-            <header>
+            <header className="header">
                 <h1
                     className="header__heading"
                     style={{
