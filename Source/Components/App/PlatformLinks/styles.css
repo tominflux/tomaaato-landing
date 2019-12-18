@@ -1,6 +1,7 @@
 .platform-links {
     display: inline-block;
     width: 100%;
+    text-align: inherit;
 }
 
 .platform-links__links {

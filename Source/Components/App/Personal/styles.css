@@ -12,3 +12,7 @@
         margin-right: 0;
     }
 }
+
+.personal__left-col {
+    text-align: right;
+}

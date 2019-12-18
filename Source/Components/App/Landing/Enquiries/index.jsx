@@ -1,7 +1,6 @@
 import * as React from 'react'
 import Heading from './Heading';
 import Separator from './Separator';
-import Details from './Details';
 import PlatformLinks from '../../PlatformLinks'
 import LinkRow from '../../PlatformLinks/LinkRow'
 import Octicon, {Person, Mention, MarkGithub} from '@primer/octicons-react'
