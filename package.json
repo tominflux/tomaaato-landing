@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "node build",
-    "start": "node start"
+    "start": "node start",
+    "deploy": "npx parcel build ./src/Static/index.html -d ./docs && node postbuild"
   },
   "repository": {
     "type": "git",
